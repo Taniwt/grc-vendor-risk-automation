@@ -1,16 +1,16 @@
-Vendor Name,Service,Data Classification,SOC 2,MFA,Encryption,Finding,Likelihood,Impact,Risk Level,Remediation Owner,Due Date,Status
-CloudPay,Payment Processing,Restricted,Yes,Yes,Yes,MFA not enforced for all privileged support accounts,Medium,High,High,Vendor Security,2026-08-15,Open
-PeopleCore,HR SaaS,Confidential,Yes,Yes,Yes,No significant finding,Low,Medium,Low,HR Systems,2026-12-01,Closed
-MarketFlow,Marketing Automation,Internal,No,Yes,Yes,SOC 2 report not provided,Medium,Medium,Medium,Marketing Operations,2026-09-05,Open
-DataLakeX,Analytics Platform,Confidential,Yes,Yes,Yes,Penetration test is older than 18 months,Medium,High,High,Data Engineering,2026-08-20,Open
-HelpDeskNow,Customer Support,Confidential,Yes,Yes,Yes,No documented annual access review evidence,Medium,Medium,Medium,Customer Operations,2026-09-15,In Progress
-ShipFast,Shipping API,Internal,Yes,Yes,Yes,No significant finding,Low,Low,Low,Operations,2026-11-01,Closed
-InvoicePro,Billing SaaS,Confidential,Yes,No,Yes,MFA unavailable for standard admin accounts,High,High,Critical,Finance Systems,2026-08-10,Open
-DevBoard,Project Management,Internal,Yes,Yes,Yes,No significant finding,Low,Low,Low,Engineering,2026-12-15,Closed
-RecruitCloud,Recruiting SaaS,Confidential,No,Yes,Yes,Security questionnaire incomplete,Medium,Medium,Medium,Talent Operations,2026-09-01,Open
-BackupSafe,Cloud Backup,Restricted,Yes,Yes,Yes,Business continuity test evidence not provided,Medium,High,High,IT Operations,2026-08-18,In Progress
-ChatAssist,AI Support Tool,Confidential,No,Yes,Unknown,Data retention and model-training use not documented,High,High,Critical,Customer Operations,2026-08-25,Open
-SignRight,E-Signature,Confidential,Yes,Yes,Yes,No significant finding,Low,Medium,Low,Legal Operations,2026-11-30,Closed
-CodeScan,Security Scanning,Internal,Yes,Yes,Yes,No significant finding,Low,Medium,Low,Security,2026-12-31,Closed
-SurveySpark,Survey SaaS,Internal,No,Yes,Yes,Vendor has no independent assurance report,Medium,Low,Low,Marketing Operations,2026-10-01,Open
-FileShareCo,Document Sharing,Restricted,Yes,Yes,Yes,External sharing controls not reviewed this year,Medium,High,High,IT Operations,2026-08-12,Open
+Vendor Name,Service,Data Classification,SOC 2,MFA,Encryption,Finding,Finding Category,Likelihood,Impact,Risk Level,Remediation Owner,Identified Date,Due Date,Status
+CloudPay,Payment Processing,Restricted,Yes,Yes,Yes,MFA not enforced for all privileged support accounts,access-control-mfa,Medium,High,High,Vendor Security,2026-07-06,2026-08-15,Open
+PeopleCore,HR SaaS,Confidential,Yes,Yes,Yes,No significant finding,none,Low,Medium,Low,HR Systems,2026-05-15,2026-12-01,Closed
+MarketFlow,Marketing Automation,Internal,No,Yes,Yes,SOC 2 report not provided,assurance-report-missing,Medium,Medium,Medium,Marketing Operations,2026-07-07,2026-09-05,Open
+DataLakeX,Analytics Platform,Confidential,Yes,Yes,Yes,Penetration test is older than 18 months,vulnerability-testing-stale,Medium,High,High,Data Engineering,2026-07-21,2026-08-20,Open
+HelpDeskNow,Customer Support,Confidential,Yes,Yes,Yes,No documented annual access review evidence,access-review-evidence,Medium,Medium,Medium,Customer Operations,2026-07-17,2026-09-15,In Progress
+ShipFast,Shipping API,Internal,Yes,Yes,Yes,No significant finding,none,Low,Low,Low,Operations,2026-04-10,2026-11-01,Closed
+InvoicePro,Billing SaaS,Confidential,Yes,No,Yes,MFA unavailable for standard admin accounts,access-control-mfa,High,High,Critical,Finance Systems,2026-07-26,2026-08-10,Open
+DevBoard,Project Management,Internal,Yes,Yes,Yes,No significant finding,none,Low,Low,Low,Engineering,2026-06-20,2026-12-15,Closed
+RecruitCloud,Recruiting SaaS,Confidential,No,Yes,Yes,Security questionnaire incomplete,due-diligence-incomplete,Medium,Medium,Medium,Talent Operations,2026-07-03,2026-09-01,Open
+BackupSafe,Cloud Backup,Restricted,Yes,Yes,Yes,Business continuity test evidence not provided,business-continuity-testing,Medium,High,High,IT Operations,2026-07-14,2026-08-18,In Progress
+ChatAssist,AI Support Tool,Confidential,No,Yes,Unknown,Data retention and model-training use not documented,data-retention-privacy,High,High,Critical,Customer Operations,2026-08-10,2026-08-25,Open
+SignRight,E-Signature,Confidential,Yes,Yes,Yes,No significant finding,none,Low,Medium,Low,Legal Operations,2026-07-15,2026-11-30,Closed
+CodeScan,Security Scanning,Internal,Yes,Yes,Yes,No significant finding,none,Low,Medium,Low,Security,2026-08-05,2026-12-31,Closed
+SurveySpark,Survey SaaS,Internal,No,Yes,Yes,Vendor has no independent assurance report,assurance-report-missing,Medium,Low,Low,Marketing Operations,2026-07-03,2026-10-01,Open
+FileShareCo,Document Sharing,Restricted,Yes,Yes,Yes,External sharing controls not reviewed this year,data-sharing-controls,Medium,High,High,IT Operations,2026-07-28,2026-08-12,Open

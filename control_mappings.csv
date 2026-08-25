@@ -1,0 +1,10 @@
+Finding Category,Description,SOC 2 (TSC),ISO 27001:2022 Annex A,NIST CSF 2.0
+access-control-mfa,Multi-factor authentication not enforced for privileged or administrative access,CC6.1,A.5.17; A.8.5,PR.AA-03
+assurance-report-missing,No current independent assurance report (SOC 2 / ISO 27001) provided,CC9.2,A.5.22,GV.SC-07
+vulnerability-testing-stale,Penetration test or vulnerability assessment is out of date,CC7.1,A.8.8,ID.RA-01
+access-review-evidence,Periodic user access review not performed or not evidenced,CC6.3,A.5.18,PR.AA-05
+due-diligence-incomplete,Security due-diligence questionnaire incomplete or not returned,CC9.2,A.5.19,GV.SC-06
+business-continuity-testing,Business continuity or disaster recovery testing not evidenced,A1.3,A.5.30,ID.IM-02
+data-retention-privacy,Data retention or secondary data use (incl. AI model training) not documented,P4.2,A.5.34,GV.SC-05
+data-sharing-controls,External sharing and information transfer controls not reviewed,CC6.7,A.5.14,PR.DS-02
+encryption-controls,Encryption of data at rest or in transit not evidenced,CC6.7,A.8.24,PR.DS-01

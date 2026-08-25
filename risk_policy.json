@@ -1,0 +1,64 @@
+{
+  "policy_version": "1.0",
+  "policy_owner": "Third-Party Risk Management",
+
+  "risk_level_order": ["Low", "Medium", "High", "Critical"],
+
+  "risk_matrix": {
+    "_comment": "Inherent risk = Likelihood weight x Impact weight, banded by score.",
+    "likelihood_weights": { "low": 1, "medium": 2, "high": 3 },
+    "impact_weights": { "low": 1, "medium": 2, "high": 3 },
+    "score_thresholds": [
+      { "max_score": 2, "level": "Low" },
+      { "max_score": 4, "level": "Medium" },
+      { "max_score": 6, "level": "High" },
+      { "max_score": 9, "level": "Critical" }
+    ]
+  },
+
+  "data_classification_escalation": {
+    "_comment": "Tiers of upward adjustment applied to the matrix result based on the most sensitive data the vendor handles.",
+    "restricted": 1,
+    "confidential": 0,
+    "internal": 0,
+    "public": 0
+  },
+
+  "remediation_sla_days": {
+    "_comment": "Maximum days from finding identification to remediation due date, by adjusted risk level.",
+    "critical": 15,
+    "high": 30,
+    "medium": 60,
+    "low": 90
+  },
+
+  "early_warning_days": 14,
+
+  "aging_buckets": [
+    { "max_days_past_due": 30, "label": "0-30 days" },
+    { "max_days_past_due": 60, "label": "31-60 days" },
+    { "max_days_past_due": 90, "label": "61-90 days" },
+    { "max_days_past_due": null, "label": "90+ days" }
+  ],
+
+  "closed_statuses": ["closed"],
+
+  "no_finding_values": ["no significant finding", "none", ""],
+  "no_finding_categories": ["none", ""],
+
+  "assessed_controls": {
+    "_comment": "Register columns treated as security-control attestations, and the control-mapping category each maps to when a gap is found.",
+    "SOC 2": "assurance-report-missing",
+    "MFA": "access-control-mfa",
+    "Encryption": "encryption-controls"
+  },
+
+  "control_gap_values": {
+    "_comment": "Attestation values that constitute a gap, and how each gap is characterised. 'no' is a missing control; blank/unknown is missing evidence.",
+    "no": "Control not in place",
+    "unknown": "Evidence not provided",
+    "": "Evidence not provided"
+  },
+
+  "control_attested_values": ["yes", "n/a", "not applicable"]
+}
