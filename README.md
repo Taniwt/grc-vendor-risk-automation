@@ -166,20 +166,22 @@ The script prints a run summary and writes `risk_summary_report.csv` and
 
 ---
 
-## AI-Assisted Development
+## AI-Assisted Development with Claude Code
 
-**Claude Code (Anthropic) was used as an AI-assisted development tool throughout this project.**
+**Claude Code (Anthropic) was used as an AI-assisted development tool during this project.**
 This is disclosed openly because transparency about AI usage is itself a governance practice.
+
+Claude Code was used as an assistant within a human-directed workflow. The project's scope, risk
+policy, control mappings, and design decisions were defined and owned by the author; Claude Code
+supported the work rather than producing it autonomously.
 
 ### What Claude Code assisted with
 
-- Code development and iterative refinement of the risk engine
-- Debugging and troubleshooting
-- Testing, including edge-case and error-path test scenarios
-- Repetitive automation tasks such as scaffolding, data shaping, and formatting
-- Data-quality checks and validation logic
-- Documentation, including this README
-- Reviewing logic and identifying potential defects
+- **Reviewing the repository** — reading the code, policy configuration, control mappings, and register to build an accurate picture of the implementation
+- **Validating implementation logic** — checking the scoring matrix, escalation rules, SLA calculations, and control-gap handling against the documented policy
+- **Identifying potential issues** — surfacing defects, edge cases, and error paths for confirmation and correction
+- **Improving documentation** — refining this README for clarity, accuracy, and completeness
+- **Supporting the development and verification workflow** — iterative refinement of the risk engine, debugging, test scenarios, data-quality checks, and repetitive scaffolding and formatting tasks
 
 As one concrete example, verification testing surfaced a latent defect in which framework control
 references were shared across register rows rather than copied per row, which could have attributed
