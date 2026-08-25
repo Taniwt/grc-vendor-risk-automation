@@ -1,0 +1,7 @@
+Vendor Name,Risk Level,Finding,Status,Due Date,Remediation Owner,Review Reason
+CloudPay,High,MFA not enforced for all privileged support accounts,Open,2026-08-15,Vendor Security,High/Critical risk; Overdue remediation
+DataLakeX,High,Penetration test is older than 18 months,Open,2026-08-20,Data Engineering,High/Critical risk; Overdue remediation
+InvoicePro,Critical,MFA unavailable for standard admin accounts,Open,2026-08-10,Finance Systems,High/Critical risk; Overdue remediation
+BackupSafe,High,Business continuity test evidence not provided,In Progress,2026-08-18,IT Operations,High/Critical risk; Overdue remediation
+ChatAssist,Critical,Data retention and model-training use not documented,Open,2026-08-25,Customer Operations,High/Critical risk; Missing/unknown: Encryption
+FileShareCo,High,External sharing controls not reviewed this year,Open,2026-08-12,IT Operations,High/Critical risk; Overdue remediation
